@@ -1,10 +1,16 @@
 <template>
   <div class="nav">
     <nuxt-link class="nav__link" to="/">
-      Home
+      Главная
+    </nuxt-link>
+    <nuxt-link class="nav__link" to="/articles">
+      Статьи
+    </nuxt-link>
+    <nuxt-link class="nav__link" to="/recipes">
+      Рецепты
     </nuxt-link>
     <nuxt-link class="nav__link" to="/about">
-      About
+      О сайте
     </nuxt-link>
   </div>
 </template>
@@ -21,13 +27,19 @@ a.nuxt-link-exact-active {
 }
 
 .nav {
-  padding: 8px 0;
   display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+  font-weight: 500;
 
   &__link {
     color: var(--color-black);
     text-decoration: none;
     margin: 0 16px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 </style>

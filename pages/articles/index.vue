@@ -1,7 +1,7 @@
 <template>
   <div>
     <Heading size="xl">
-      Главная
+      Статьи
     </Heading>
   </div>
 </template>
@@ -15,9 +15,7 @@ import Heading from '~/components/Heading.vue'
     Heading
   }
 })
-export default class MainPage extends Vue {
+export default class ArticlesPage extends Vue {
+
 }
 </script>
-
-<style lang="postcss">
-</style>

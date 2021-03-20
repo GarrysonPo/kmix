@@ -1,13 +1,16 @@
 <template>
   <div>
     <div class="content">
-      <Nav />
+      <div class="content__nav">
+        <Theme />
+        <Nav />
+      </div>
       <Nuxt />
     </div>
   </div>
 </template>
 
-<style>
+<style lang="postcss">
 * {
   box-sizing: border-box;
 }
@@ -23,5 +26,11 @@ p {
 .content {
   margin: 0 auto;
   max-width: 1200px;
+
+  &__nav {
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 </style>

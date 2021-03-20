@@ -7,10 +7,10 @@ const mockCards = (params: { offset: number, count: number }): Card[] => {
     cards.push({
       id: ind,
       alias: Math.random().toString(16).substr(2, 32),
-      title: `Title ${ind + 1}`,
+      title: `Заголовок ${ind + 1}`,
       dish: {
         cookingTime: Math.floor(((Math.random() * 40) + 1)),
-        difficulty: 'Easy',
+        difficulty: 'Легко',
         servings: Math.floor(((Math.random() * 8) + 1))
       },
       author: 'Hank Douglas'

@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     class="card"
-    :to="`/catalog/${card.id + 1}`"
+    :to="`/recipes/${card.id + 1}`"
   >
     <div class="card__image">
     </div>
@@ -10,13 +10,13 @@
         {{ card.title }}
       </p>
       <ul class="card__params">
-        <li class="card__param">{{ card.dish.cookingTime }}m</li>
+        <li class="card__param">{{ card.dish.cookingTime }}м</li>
         <li class="card__param">{{ card.dish.difficulty }}</li>
-        <li class="card__param">{{ card.dish.servings }} servings</li>
+        <li class="card__param">{{ card.dish.servings }} порции</li>
       </ul>
       <p class="card__origin">
-        <span class="card__by">By</span>
-        <span class="card__author">Hank Douglas</span>
+        <span class="card__by">Автор</span>
+        <span class="card__author">{{ card.author }}</span>
       </p>
     </div>
   </nuxt-link>
@@ -36,7 +36,6 @@ export default class BaseCard extends Vue {
 .card {
   display: flex;
   padding: 8px 0;
-  margin: 0 16px 8px 16px;
   text-decoration: none;
   border-bottom: 1px solid var(--color-silver-2);
 

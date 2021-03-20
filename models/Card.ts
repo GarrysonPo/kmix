@@ -5,7 +5,7 @@ export interface Card {
   dish: {
     cookingTime: number
     servings: number
-    difficulty: 'Easy' | 'Intermediate' | 'Hard'
+    difficulty: 'Легко' | 'Средне' | 'Сложно'
   }
   author: string
 }
